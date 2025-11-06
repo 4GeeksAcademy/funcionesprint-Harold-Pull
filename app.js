@@ -25,7 +25,7 @@ printByLine(500)
 function printByChart(time) {
     let delay = 0;
 
-    for (let i = 0; i < asciiHeart.length; i++) {
+    for (let k = 0; k < asciiHeart.length; k++) {
         const chars = asciiHeart[i].split("");
 
         chars.forEach((char, index) => {
@@ -33,7 +33,7 @@ function printByChart(time) {
             setTimeout(() => {
                 process.stdout.write(char);
                 
-                if (asciiHeart[i].length - 1 === index) {
+                if (asciiHeart[k].length - 1 === index) {
                     console.log("")
                 }
 
@@ -49,3 +49,5 @@ function printByChart(time) {
 
 
 printByChart(50);
+
+//No he encontrado errores en el código, asi que he cambiado algunas varaibles. i>k
